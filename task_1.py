@@ -47,7 +47,7 @@ REGEXP_4 = r"\b(?:\d{1,3}.){3}\d{1,3}\b"
 # aaa Abbb ccc ---> Abbb
 # Aaa Abbb ccc ---> Aaa, Abbb
 # Caa Cbb Accc ---> Accc
-REGEXP_5 = r"\b[A-Z][a-z]*\b"
+REGEXP_5 = r"\b[A][a-z]*\b"
 
 # a b c d e f ---> a, b, e, f
 # abcdef      ---> a, b, e, f
