@@ -21,6 +21,18 @@ import re
 
 
 def get_plate_type(plate):
-    # ваше решение:
+  regex_type_1a = r"^\w\d{3}\w{2}\s\d{2}$"
+  regex_type_1b = r"^\w{2}\d{3}\s\d{2}$"
+  regex_type_2 = r"^\w{2}\d{4}\s\d{2}$"
+  regex_type_3 = r"^\d{4}\w{2}\s\d{2}$"
 
-    return "Fail!"
+  if re.match(regex_type_1a, number):
+      return "1А"
+  elif re.match(regex_type_1b, number):
+      return "1Б"
+  elif re.match(regex_type_2, number):
+      return "2"
+  elif re.match(regex_type_3, number):
+      return "3"
+  return "Fail!"
+
