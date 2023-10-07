@@ -26,13 +26,13 @@ def get_plate_type(plate):
   regex_type_2 = r"^\w{2}\d{4}\s\d{2}$"
   regex_type_3 = r"^\d{4}\w{2}\s\d{2}$"
 
-  if re.match(regex_type_1a, plate):
-      return "1А"
+  if re.match(regex_type_3, plate):
+      return "3"
   elif re.match(regex_type_1b, plate):
       return "1Б"
   elif re.match(regex_type_2, plate):
       return "2"
-  elif re.match(regex_type_3, plate):
-      return "3"
+  elif re.match(regex_type_1a, plate):
+      return "1А"
   return "Fail!"
 
