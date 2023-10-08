@@ -47,11 +47,11 @@ REPL_2 = r"\1"
 # this is is is text   ---> this *is* text
 # this is text text    ---> this is *text*
 # this is is text text ---> this *is* *text*
-PATTERN_3 = r"\b(\w+)(\s(\1))\b"
-REPL_3 = r"\1*\1*"
+PATTERN_3 = r"\b(\w+)\b(?=.*\b\1\b)"
+REPL_3 = r"*\1*"
 
 # one two three ---> two one three
 # dog cat wolf  ---> cat dog wolf
 # goose car rat ---> goose rat car
-PATTERN_4 = r"(\b\w+\b)\s(\b\w+\b)"
+PATTERN_4 = r"(\b\w{3}\b)\s(\b\w{3}\b)"
 REPL_4 = r"\2 \1"
