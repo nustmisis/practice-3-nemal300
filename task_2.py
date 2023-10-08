@@ -21,7 +21,7 @@ import re
 
 
 def get_plate_type(plate):
-  regex_type_1a = r"^\w\d{3}\w{2}\s\d{2}$"
+  regex_type_1a = r"^\w\d{3}\w{2}\s\d{1}9$"
   regex_type_1b = r"^\w{2}\d{3}\s\d{2}$"
   regex_type_2 = r"^\w{2}\d{4}\s\d{2}$"
   regex_type_3 = r"^\d{4}\w{2}\s\d{2}$"
