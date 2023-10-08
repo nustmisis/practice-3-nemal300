@@ -47,7 +47,7 @@ REPL_2 = r"\1"
 # this is is is text   ---> this *is* text
 # this is text text    ---> this is *text*
 # this is is text text ---> this *is* *text*
-PATTERN_3 = r"\b(\w+)\b(?=.*\b\1\b)"
+PATTERN_3 = r"(\b\w+\b)(\s+\1)+"
 REPL_3 = r"*\1*"
 
 # one two three ---> two one three
